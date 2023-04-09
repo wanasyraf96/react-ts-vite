@@ -9,9 +9,15 @@ interface LanguageButtonType {
 }
 function LanguageButton({ button }: LanguageButtonType) {
 	return <>
-		{button.map((lang) => {
-			<button key={lang.value} className='uppercase' value={lang.value}>{lang.label}</button>
-		})}
+		{
+			button.forEach(lang => {
+
+				return <h1>Hello World</h1>
+			})
+			// button.forEach((lang) => {
+			// 	'aaaa'
+			// })
+		}
 	</>
 }
 
